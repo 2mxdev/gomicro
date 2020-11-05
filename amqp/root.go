@@ -2,7 +2,7 @@ package amqp
 
 import "github.com/gofrs/uuid"
 
-type AqmpPayload struct {
+type AmqpPayload struct {
 	Language string `json:"language"`
 	TraceId uuid.UUID `json:"traceId"`
 	Sender string `json:"sender"`
@@ -12,7 +12,7 @@ type AqmpPayload struct {
 	EventName *string `json:"eventName"`
 }
 
-func (a AqmpPayload) Init()  {
+func (a AmqpPayload) Init()  {
 	if len(a.Language) == 0 {
 		a.Language = "ru"
 	}
