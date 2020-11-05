@@ -12,7 +12,7 @@ type AqmpPayload struct {
 	EventName *string `json:"eventName"`
 }
 
-func (a AqmpPayload) init()  {
+func (a AqmpPayload) Init()  {
 	if len(a.Language) == 0 {
 		a.Language = "ru"
 	}
