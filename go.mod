@@ -1,4 +1,4 @@
-module gitlab.2mx.org/micro/x
+module github.com/2mxdev/gomicro
 
 go 1.15
 
